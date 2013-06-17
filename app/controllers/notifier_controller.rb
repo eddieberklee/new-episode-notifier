@@ -37,6 +37,8 @@ class NotifierController < ApplicationController
       knownNumbers.push e.number
     end
 
+    @firstSpotted = Episode.map(&:number).sort()[-1].created_at
+
     # Twilio API
     f = File.new("twilio.password","r")
     account_sid, auth_token = f.read.split("\n")

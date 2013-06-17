@@ -1,8 +1,18 @@
 <h1>Notifier#check</h1>
 <p>Find me in app/views/notifier/check.html.erb</p>
 
+Latest
+
 Episodes known to be released on CrunchyRoll: <%= @knownEpisodes.map(&:number).sort %>
+
+First spotted the latest episode: <%= @firstSpotted %>
+
+Last Checked:  <%= @lastChecked %>
 
 <% @newEpisodes.each do |e| %>
   New episode <%= e %>!
 <% end %>
+
+
+
+

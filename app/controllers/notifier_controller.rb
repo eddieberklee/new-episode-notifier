@@ -37,6 +37,11 @@ class NotifierController < ApplicationController
       knownNumbers.push e.number
     end
 
+    # Twilio API
+    f = File.new("twilio.password","r")
+    account_sid, auth_token = f.read.split("\n")
+    @client = Twilio::REST::Client.new account_sid, auth_token
+
     # newEpisodes = scrapedEpisodes - knownEpisodes
     @newEpisodes = []
 
@@ -45,6 +50,11 @@ class NotifierController < ApplicationController
       unless knownNumbers.include? number
         @newEpisodes.push number
         Episode.create(title: title, number: number)
+        @client.account.sms.messages.create(
+            :from => '+15103435046',
+            :to => '+12486223852',
+            :body => "New Attack on Titan Episode #{number}!"
+        )
       end
     end
   end

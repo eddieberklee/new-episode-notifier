@@ -752,3 +752,255 @@ Served asset /notifier.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:42:01 -0700
 Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 23:01:54 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" 
+  Rendered notifier/check.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1064ms (Views: 48.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 23:01:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 23:01:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 23:01:55 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 23:01:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 23:01:55 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 23:01:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 23:02:51 -0700
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  Rendered notifier/check.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1861ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 23:02:53 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 23:02:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 23:02:53 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 23:02:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 23:02:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 23:02:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 23:03:19 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" 
+  Rendered notifier/check.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 606ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 23:03:20 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 23:03:20 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 23:03:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 23:03:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 23:03:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 23:03:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 23:04:54 -0700
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.2ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  Rendered notifier/check.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3009ms (Views: 11.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 23:04:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 23:04:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 23:04:57 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 23:04:57 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 23:04:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 23:04:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 23:12:42 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.2ms)[0m  SELECT "episodes".* FROM "episodes" 
+Completed 500 Internal Server Error in 1146ms
+
+NameError (uninitialized constant NotifierController::Twilio):
+  app/controllers/notifier_controller.rb:43:in `check'
+
+
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.2ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEpisodes (20130617051731)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "episodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130617051731')
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("episodes")
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 23:13:10 -0700
+Connecting to database specified by database.yml
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.2ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (22.2ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 06:13:12 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 06:13:12 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 06:13:13 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 06:13:13 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 06:13:14 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 06:13:14 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 06:13:15 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 06:13:15 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 06:13:16 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 06:13:16 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 06:13:17 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 06:13:17 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 06:13:18 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 06:13:18 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 06:13:18 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 06:13:18 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 06:13:19 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 06:13:19 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 06:13:20 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 06:13:20 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (2.7ms)[0m  begin transaction
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 06:13:21 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 06:13:21 UTC +00:00]]
+  [1m[35m (6.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 06:13:22 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 06:13:22 UTC +00:00]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  Rendered notifier/check.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 12103ms (Views: 167.5ms | ActiveRecord: 79.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 23:13:23 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:23 -0700
+Served asset /notifier.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 23:13:23 -0700
+Served asset /notifier.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:23 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:23 -0700
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 23:13:27 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" 
+  Rendered notifier/check.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 499ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 23:13:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 23:13:28 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:28 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 23:13:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)

@@ -1,0 +1,754 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-16 22:21:14 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (40ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:21:17 -0700
+Processing by NotifierController#check as HTML
+  Rendered notifier/check.html.erb within layouts/application (5.0ms)
+Compiled notifier.css  (124ms)  (pid 2395)
+Compiled application.css  (136ms)  (pid 2395)
+Compiled jquery.js  (6ms)  (pid 2395)
+Compiled jquery_ujs.js  (0ms)  (pid 2395)
+Compiled notifier.js  (337ms)  (pid 2395)
+Compiled application.js  (512ms)  (pid 2395)
+Completed 200 OK in 944ms (Views: 943.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:21:18 -0700
+Served asset /notifier.js - 200 OK (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:21:18 -0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:21:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:21:18 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:21:18 -0700
+Served asset /notifier.css - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:21:18 -0700
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:26:16 -0700
+Processing by NotifierController#check as HTML
+Completed 500 Internal Server Error in 111ms
+
+ActiveRecord::StatementInvalid (Could not find table 'episodes'):
+  app/controllers/notifier_controller.rb:3:in `check'
+
+
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.3ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEpisodes (20130617051731)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "episodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130617051731')
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("episodes")
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:27:00 -0700
+Connecting to database specified by database.yml
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.1ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  Rendered notifier/check.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1309ms (Views: 117.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:27:03 -0700
+Served asset /jquery.js - 304 Not Modified (84ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:27:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:27:03 -0700
+Served asset /notifier.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:27:03 -0700
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:27:03 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:27:03 -0700
+Served asset /notifier.css - 304 Not Modified (3ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:30:36 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.1ms)[0m  SELECT "episodes".* FROM "episodes" 
+  Rendered notifier/check.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 698ms (Views: 64.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:30:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:30:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:30:37 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:30:37 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:30:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:30:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:38:18 -0700
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.1ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+Completed 500 Internal Server Error in 546ms
+
+NameError (undefined local variable or method `newEpisodes' for #<NotifierController:0x007f882450afd8>):
+  app/controllers/notifier_controller.rb:46:in `block in check'
+  app/controllers/notifier_controller.rb:43:in `each'
+  app/controllers/notifier_controller.rb:43:in `check'
+
+
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.8ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.4ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:38:29 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.2ms)[0m  SELECT "episodes".* FROM "episodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (145.8ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:29 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:38:29 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[35m (14.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:38:30 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  Rendered notifier/check.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1059ms (Views: 9.5ms | ActiveRecord: 187.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:38:30 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:30 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:38:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:38:33 -0700
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:38:34 UTC +00:00]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  Rendered notifier/check.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 681ms (Views: 7.5ms | ActiveRecord: 33.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:38:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:38:34 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:38:34 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:39:18 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:39:18 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  Rendered notifier/check.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 611ms (Views: 8.6ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:39:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:39:19 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:19 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:39:42 -0700
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:39:43 UTC +00:00]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  Rendered notifier/check.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 946ms (Views: 113.5ms | ActiveRecord: 54.6ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:39:44 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:44 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:39:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:39:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:39:59 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.6ms)[0m  SELECT "episodes".* FROM "episodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:00 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  Rendered notifier/check.html.erb within layouts/application (35.4ms)
+Completed 500 Internal Server Error in 727ms
+
+ActionView::Template::Error (undefined method `title' for #<Array:0x007f8823fd39c0>):
+    1: <h1>Notifier#check</h1>
+    2: <p>Find me in app/views/notifier/check.html.erb</p>
+    3: 
+    4: <%= @knownEpisodes.title %>
+    5: 
+    6: <% @newEpisodes.each do |e| %>
+    7:   New episode <%= e %>!
+  app/views/notifier/check.html.erb:4:in `_app_views_notifier_check_html_erb__1089659974834646173_70111350834980'
+
+
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.0ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (58.9ms)
+  Rendered /Users/elee/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (80.5ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:40:40 -0700
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.7ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:40 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  Rendered notifier/check.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 591ms (Views: 33.2ms | ActiveRecord: 31.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:40:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:40:41 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:41 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:40:52 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.7ms)[0m  SELECT "episodes".* FROM "episodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:40:54 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  Rendered notifier/check.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1539ms (Views: 9.5ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:40:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:40:54 -0700
+Served asset /notifier.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:54 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:40:54 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEpisodes (20130617051731)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "episodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130617051731')
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("episodes")
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:41:50 -0700
+Connecting to database specified by database.yml
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.1ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (42.0ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 12], ["title", "5 days from now"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 11], ["title", "Icon - The Battle for Trost (7)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 10], ["title", "Response - The Battle for Trost (6)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 9], ["title", "Where the Left Arm Went  - The Battle for Trost (5)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 8], ["title", "Hearing the Heartbeat - The Battle for Trost (4)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 7], ["title", "The Small Blade - The Battle for Trost (3)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 6], ["title", "The World the Girl Saw - Battle for Trost (2)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 5], ["title", "First Battle - Battle of Trost (1)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 4], ["title", "Night of the Graduation Ceremony - Humanity Rises Again (2)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 3], ["title", "A Dim Light in the Darkness of Despair - Humanity Rises Again (1)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 2], ["title", "That Day - The Fall of Zhiganshina (2)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "episodes" ("created_at", "number", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00], ["number", 1], ["title", "To You, 2,000 Years in the Future -The Fall of Zhiganshina (1)"], ["updated_at", Mon, 17 Jun 2013 05:41:52 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  Rendered notifier/check.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1093ms (Views: 240.1ms | ActiveRecord: 77.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:41:52 -0700
+Served asset /notifier.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:52 -0700
+Served asset /notifier.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:52 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:52 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:41:52 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:41:56 -0700
+Processing by NotifierController#check as HTML
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" 
+  Rendered notifier/check.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 842ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:41:57 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:57 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:41:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:41:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/checkEpisodes" for 127.0.0.1 at 2013-06-16 22:42:00 -0700
+Processing by NotifierController#check as HTML
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" [0m
+  Rendered notifier/check.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 580ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/notifier.css?body=1" for 127.0.0.1 at 2013-06-16 22:42:01 -0700
+Served asset /notifier.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 22:42:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:42:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 22:42:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifier.js?body=1" for 127.0.0.1 at 2013-06-16 22:42:01 -0700
+Served asset /notifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 22:42:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)

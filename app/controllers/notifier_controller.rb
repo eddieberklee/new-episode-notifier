@@ -59,5 +59,7 @@ class NotifierController < ApplicationController
         )
       end
     end
+
+    @latestEpisode = Episode.all.map(&:number).sort()[-1]
   end
 end

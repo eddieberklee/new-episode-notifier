@@ -1,7 +1,24 @@
 <h1>Notifier#check</h1>
 <p>Find me in app/views/notifier/check.html.erb</p>
 
-Latest
+<style>
+  #topbar, #episodebar {
+    width: 700px;
+    height: 70px;
+  }
+  #topbar {
+    background-color: #fff5a4;
+    color: #f1c40f;
+    font-size: 1.8em;
+  }
+  #episodebar {
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: 1.3em;
+  }
+</style>
+
+Latest episode: #<%= @latestEpisode %>
 
 Episodes known to be released on CrunchyRoll: <%= @knownEpisodes.map(&:number).sort %>
 
